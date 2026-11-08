@@ -1,39 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "68dea58501ee3aa52077db8b42919fc83809e610324139b302cbcfac76791489",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://docs.aerion.app/api"
-  ],
   "id": "aerion-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Aerion MCP setup and connection checker",
-  "description": "Generate Aerion MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Aerion for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-aerion-mcp",
+  "sourceRevision": "2d2294ad084773f86cdbd78dfc3371db49dd9546deec1ae253e1649404fc4aac",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://docs.aerion.app/api"
+  ],
+  "utility": {
+    "problem": "Prepare Aerion and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "aerion",
   "appName": "Aerion",
-  "providerDocs": "https://docs.aerion.app/api",
-  "providerWebsite": "https://www.aerion.app/",
-  "authentication": {
-    "type": "token_exchange",
-    "requiredCredentialFields": [
-      "provider_exchange_credentials"
-    ],
-    "requiredHeaderNames": [
-      "companyurl"
-    ],
-    "helpUrl": "https://docs.aerion.app/developer/authentication",
-    "tenantRequired": true,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-aerion-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }

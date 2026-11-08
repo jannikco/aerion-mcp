@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-aerion",
+      "description": "Connect AI agents to Aerion using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-aerion/SKILL.md": "51ee74eb408e05d7ead42361c9b1e3ef4ccb364397d3284e11d30139b4e462fe"
+  }
+}
